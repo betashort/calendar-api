@@ -130,5 +130,5 @@ MEDIA_ROOT =  BASE_DIR / 'media'
 CORS_ALLOWED_ORIGINS = [
   'http://localhost:3000',
   'https://sleep-check-app.betashort-lab.com',
-  'https://mhd-app.betashort-lab.com/'
+  'https://mhd-app.betashort-lab.com',
 ]

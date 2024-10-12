@@ -22,5 +22,5 @@ from mentalHealthDiary import views as mental_health_diary_API_views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/sleep-check-diary/", sleep_diary_API_views.SleepDiaryAPIView.as_view()),
-    # path("api/mental-health-diary/", mental_health_diary_API_views.MentalHealthDiaryAPIView.as_view()),
+    path("api/mental-health-diary/", mental_health_diary_API_views.MentalHealthDiaryAPIView.as_view()),
 ]
