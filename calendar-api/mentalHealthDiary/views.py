@@ -12,7 +12,7 @@ class MentalHealthDiaryAPIView(views.APIView):
     def get(self, request, *arg, **kargs):
         mhd_event_list = MentalHealthDirary.objects.all()
         
-        serializer = MentalHealthDiarySerializer(isinstance=mhd_event_list)
+        serializer = MentalHealthDiarySerializer(instance=mhd_event_list, many=True)
         
         return Response(serializer.data)
     
